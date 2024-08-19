@@ -1,0 +1,47 @@
+.s3{
+	background-color: var(--mainColor);
+	border-bottom:1px solid var(--borderColor);
+	padding: 5em 0;
+
+    @include respond(mini-phone) { // width <800px
+        h2{
+            font-size:25px;
+        }
+        h4{
+            font-size:20px; 
+        }
+        
+    }
+
+    
+
+    
+
+    img {
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    video {
+        max-width: 100%;
+        object-fit: cover;
+
+    }
+
+    .featured_image {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    hr {
+        color: gold;
+    }
+}
+#div_id_tags,
+    #id_tags {
+        overflow-y: scroll;
+        max-height: 100px;
+        border-radius: 5px;
+        padding: 5px;
+        border: 1px solid #888;
+    }

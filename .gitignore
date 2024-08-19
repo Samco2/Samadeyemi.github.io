@@ -1,0 +1,22 @@
+
+
+
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+/media
+/static
+.env
+.node_modules
+
+
+
+### Sass ###
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map

@@ -1,0 +1,146 @@
+.about-banner{
+    // padding: 0 5rem;
+    margin: 0 auto;
+
+
+    &-content{
+        // margin-left:3rem;
+        text-align: center;
+
+        span{
+            font-size: 6rem;
+            color:#89715b;
+            font-weight: 700;
+            @include respond(tab-land) { // width <1200px
+                font-size: 5rem;
+                
+            }
+            @include respond(phone) { // width <1200px
+                display: block;
+                height: 6rem;
+                font-size: 4rem;
+                
+                
+            }
+
+        }
+        h1{
+            margin-bottom: -4rem;
+            font-size: 6rem;
+            @include respond(tab-land) { // width <1200px
+                font-size: 6rem;
+                font-weight: 700;
+                
+            }
+            @include respond(tab-land) { // width <1200px
+                font-size: 4rem;
+                
+                
+            }
+            @include respond(phone) { // width <1200px
+                font-size: 3rem;
+                
+                
+            }
+        }
+        small{
+            font-family: 'Zilla Slab';
+            font-size: 4.6rem;
+            color: #fff;
+            padding-left: 8rem;
+            margin-bottom: 2rem;
+            @include respond(tab-land) { // width <1200px
+                font-size: 4rem;
+                
+            }
+            @include respond(tab-portt) { // width <1200px
+                font-size: 2.5rem;
+                
+            }
+            @include respond(phone) { // width <1200px
+                padding-left: 0rem;
+                font-size: 2rem;
+                
+                
+            }
+            
+        }
+
+
+    }
+    &-social{
+        p{
+            margin-top: 5rem;
+            color:$color-white;
+            @include respond(tab-land) { // width <1200px
+                margin-top: 2rem;
+                font-size: 2.0rem !important;
+                
+            }
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            margin-bottom: 8rem;
+            @include respond(tab-land) { // width <1200px
+                margin-bottom: 3rem;
+                
+                
+            }
+            @include respond(phone) { // width <1200px
+                display: block;
+                
+                
+            }
+            
+            li{
+                position: relative;
+                a{
+                    font-size: 2.4rem;
+                    font-weight: 700;
+                    font-family: "Zilla Slab", serif;
+                    @include respond(tab-land) { // width <1200px
+                        font-size: 3rem;
+                    font-weight: 800;
+                        
+                    }
+                    
+                    
+                  
+                }
+            }
+
+            li::before {
+                content: "-";
+                font-size: 3rem;
+                color: #fff;
+                margin: 0 10px;
+                font-weight: 900;
+                line-height: 1;
+                @include respond(phone) { // width <1200px
+                    content: "";
+                    
+                    
+                }
+            }
+        }
+    }
+    &-image{
+        margin-right: 2rem;;
+
+    }
+}
+
+.dribble{
+    color: #ff0066;
+}
+
+.about-banner-content .banner-social ul li + li::before {
+    content: "-";
+    font-size: 16px;
+    color: #fff;
+    margin: 0 10px;
+    font-weight: 700;
+    line-height: 1;
+}
